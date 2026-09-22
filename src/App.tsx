@@ -10,7 +10,7 @@ import './styles/glass-theme.css';
 
 function App() {
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
         <main className="app-shell" style={{ flex: 1 }}>
