@@ -21,7 +21,7 @@ export const bioData = {
       period: 'July 2024 - Present',
       location: 'Redmond, WA',
       chapter: 'Where I am now',
-      story: 'I contribute to Azure control-plane infrastructure in C#. I shipped ARM-based deployment automation that cut deployment overhead by ~80%, migrated 50% of production operations to event-driven REST APIs, and hardened the system with CosmosDB models, structured telemetry, and IAM/RBAC-aware request tracing that on-call actually relies on.',
+      story: 'The problem: Azure\'s control-plane services were bottlenecked by manual deployments and inconsistent operational patterns across regions. As an engineer, I rebuilt the pipeline in C# with ARM-based automation — cutting deployment overhead by ~80% — migrated 50% of production operations to event-driven REST APIs, and layered in CosmosDB models, structured telemetry, and IAM/RBAC-aware request tracing. The result: on-call has fewer surprises, and the system is easier for the next engineer to reason about.',
       highlights: [
         'Engineer C# Azure control-plane infrastructure, reducing deployment overhead by ~80% via automated ARM-based workflows',
         'Develop distributed, concurrent backend services and scalable CosmosDB data models with production observability',
@@ -35,7 +35,7 @@ export const bioData = {
       period: 'May - August 2023',
       location: 'Redmond, WA',
       chapter: 'Learning to build for other engineers',
-      story: 'Built a self-service backend platform that let partner teams subscribe to event-driven CRUD notifications, plus a fault-tolerant pipeline that eliminated 99.7% of manual ops. Also raised Azure Monitor regional onboarding confidence by 20%. Shipping infra other engineers depended on is what pulled me toward this full-time.',
+      story: 'The problem: partner teams needed to react to CRUD events in Azure Monitor, but the only path was fragile custom integrations and manual ops. I designed a self-service backend platform that let them subscribe to event-driven notifications, and a fault-tolerant asynchronous pipeline that eliminated 99.7% of manual work. I also strengthened regional onboarding infrastructure, lifting deployment confidence by 20%. Shipping infra other engineers relied on is what pulled me toward doing this full-time.',
       highlights: [
         'Designed self-service backend platform enabling partner teams to subscribe to event-driven CRUD notifications',
         'Built fault-tolerant event-driven pipeline processing asynchronous workloads, eliminating 99.7% of manual operations',
@@ -48,7 +48,7 @@ export const bioData = {
       period: 'August 2023 - May 2024',
       location: 'Bethlehem, PA',
       chapter: 'Learning to ask better questions',
-      story: 'Built a Python + pandas pipeline turning 833 raw data points into 7 MATLAB visualizations, and classified open-ended responses from 110 users into themes via text analysis. Synthesized 200+ sources and 24 user tests into evidence-based product strategy — sharpening how I turn ambiguous problems into rigorous answers.',
+      story: 'The problem: the lab had rich but messy user-study data — 833 raw data points and open-ended responses from 110 users — with no repeatable way to turn it into product decisions. I built a Python + pandas pipeline that produced 7 MATLAB visualizations, applied text analysis to classify open-ended responses into themes, and synthesized 200+ sources with 24 user tests into evidence-based product strategy. That year sharpened how I turn ambiguous problems into rigorous, defensible answers.',
       highlights: [
         'Built Python (pandas) pipeline analyzing 833 data points into 7 MATLAB visualizations',
         'Classified open-ended responses from 110 users into themes via text analysis',
@@ -61,7 +61,7 @@ export const bioData = {
       period: 'May - August 2022',
       location: 'Redmond, WA',
       chapter: 'The first taste of big-system engineering',
-      story: 'A dual PM + SWE role on Azure Server Performance. Designed a VM-placement algorithm that maximized test-config utilization, and automated deployment and validation with PowerShell + Kusto — cutting log analysis time by 99.84%. Led a 3-intern team as PM and presented findings to senior engineers. First proof that great engineering is equal parts code and coordination.',
+      story: 'The problem: Azure Server Performance testing was slow — engineers were hand-picking VM configurations and combing through logs. In a dual PM + SWE role, I designed a VM-placement algorithm that maximized valid test-config utilization, and automated deployment + validation with PowerShell and Kusto, cutting log analysis time by 99.84%. Leading a 3-intern team as PM taught me the other half of the job: great engineering is equal parts code and coordination.',
       highlights: [
         'Designed VM-placement algorithm optimizing valid test configurations for maximum resource utilization',
         'Automated VM deployment and validation via PowerShell and Kusto, cutting log analysis time by 99.84%',
