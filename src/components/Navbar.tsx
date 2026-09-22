@@ -39,24 +39,6 @@ export function Navbar() {
         >
           Resume ↓
         </a>
-        <a
-          href="https://github.com/allyyim"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="nav-link"
-          onClick={close}
-        >
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/alison-yim/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="nav-link"
-          onClick={close}
-        >
-          LinkedIn
-        </a>
       </div>
     </nav>
   );
