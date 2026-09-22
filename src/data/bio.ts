@@ -20,7 +20,7 @@ export const bioData = {
       period: 'July 2024 - Present',
       location: 'Redmond, WA',
       chapter: 'Where I am now',
-      story: 'I joined Microsoft full-time on an Azure control-plane team, moving from writing features to owning slices of production infrastructure. My days are a mix of C# backend work, distributed systems design, and thinking about how thousands of services move safely through a global cloud. I automated ARM-based deployment workflows that cut deployment overhead by ~80%, migrated half of our production operations to event-driven REST APIs, and built out CosmosDB models and observability that keep the lights on. Along the way, I have gotten obsessed with the boring-but-critical work — telemetry, request tracing, and IAM/RBAC auditing — because that is where reliability really comes from.',
+      story: 'I own slices of Azure control-plane infrastructure in C#. I shipped ARM-based deployment automation that cut deployment overhead by ~80%, migrated 50% of production operations to event-driven REST APIs, and hardened the system with CosmosDB models, structured telemetry, and IAM/RBAC-aware request tracing that on-call actually relies on.',
       highlights: [
         'Engineer C# Azure control-plane infrastructure, reducing deployment overhead by ~80% via automated ARM-based workflows',
         'Develop distributed, concurrent backend services and scalable CosmosDB data models with production observability',
@@ -34,7 +34,7 @@ export const bioData = {
       period: 'May - August 2023',
       location: 'Redmond, WA',
       chapter: 'Learning to build for other engineers',
-      story: 'My second Microsoft internship was where "systems thinking" started to click. I designed a self-service backend platform that let partner teams subscribe to event-driven CRUD notifications, and built a fault-tolerant pipeline that removed 99.7% of the manual operations the team was doing by hand. I also got to touch Azure Monitor\'s regional onboarding infrastructure, improving deployment confidence by 20%. Getting to ship something other engineers depended on — and watching the on-call load drop because of it — is what convinced me I wanted to do this full-time.',
+      story: 'Built a self-service backend platform that let partner teams subscribe to event-driven CRUD notifications, plus a fault-tolerant pipeline that eliminated 99.7% of manual ops. Also raised Azure Monitor regional onboarding confidence by 20%. Shipping infra other engineers depended on is what pulled me toward this full-time.',
       highlights: [
         'Designed self-service backend platform enabling partner teams to subscribe to event-driven CRUD notifications',
         'Built fault-tolerant event-driven pipeline processing asynchronous workloads, eliminating 99.7% of manual operations',
@@ -47,7 +47,7 @@ export const bioData = {
       period: 'August 2023 - May 2024',
       location: 'Bethlehem, PA',
       chapter: 'Learning to ask better questions',
-      story: 'Alongside classes and interviews, I spent my senior year in a research lab that studies how people interact with emerging tech. I built a Python + pandas pipeline that turned 833 raw data points into 7 MATLAB visualizations, and used text analysis to classify open-ended responses from 110 users into themes. Synthesizing 200+ sources and 24 user-testing sessions into evidence-based product recommendations taught me something engineering interviews never do: how to hold a fuzzy human problem in your head and slowly turn it into something rigorous.',
+      story: 'Built a Python + pandas pipeline turning 833 raw data points into 7 MATLAB visualizations, and classified open-ended responses from 110 users into themes via text analysis. Synthesized 200+ sources and 24 user tests into evidence-based product strategy — sharpening how I turn fuzzy problems into rigorous answers.',
       highlights: [
         'Built Python (pandas) pipeline analyzing 833 data points into 7 MATLAB visualizations',
         'Classified open-ended responses from 110 users into themes via text analysis',
@@ -60,7 +60,7 @@ export const bioData = {
       period: 'May - August 2022',
       location: 'Redmond, WA',
       chapter: 'The first taste of big-system engineering',
-      story: 'My first industry role was a dual PM + SWE internship on the Azure Server Performance team. I designed a VM-placement algorithm that optimized valid test configurations for maximum resource utilization, and automated deployment and validation with PowerShell and Kusto — cutting log analysis time by 99.84%. Leading a 3-intern team as PM meant I also had to learn how to run stand-ups, write specs people actually read, and present findings to senior engineers. It was the summer I realized "engineering" is as much about coordination and communication as it is about code.',
+      story: 'A dual PM + SWE role on Azure Server Performance. Designed a VM-placement algorithm that maximized test-config utilization, and automated deployment and validation with PowerShell + Kusto — cutting log analysis time by 99.84%. Led a 3-intern team as PM and presented findings to senior engineers. First proof that great engineering is equal parts code and coordination.',
       highlights: [
         'Designed VM-placement algorithm optimizing valid test configurations for maximum resource utilization',
         'Automated VM deployment and validation via PowerShell and Kusto, cutting log analysis time by 99.84%',
