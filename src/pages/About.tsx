@@ -1,10 +1,12 @@
 import { GlassCard } from '../components/GlassCard';
 import { bioData } from '../data/bio';
+import { Link } from 'react-router-dom';
 
 export function About() {
   return (
     <>
-      <section className="hero" style={{ padding: '2rem 0 1rem' }}>
+      <Link to="/" className="back-link">← Back to home</Link>
+      <section className="hero" style={{ padding: '1rem 0 1rem' }}>
         <span className="eyebrow">About</span>
         <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', margin: '0.75rem 0 1rem', maxWidth: '20ch' }}>
           Hi, I&apos;m Alison.

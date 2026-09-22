@@ -308,3 +308,25 @@
   .nav-link { text-align: left; }
   .hero { padding-top: 1.5rem; }
 }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1.25rem;
+  padding: 0.4rem 0.85rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-soft) !important;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.back-link:hover {
+  background: #ffffff;
+  color: var(--ink) !important;
+  transform: translateX(-2px);
+}
