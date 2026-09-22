@@ -1,68 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;700&display=swap");
+
 :root {
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(51, 65, 85, 0.1);
-  --primary: #2563eb;
-  --primary-dark: #1e40af;
-  --secondary: #1e293b;
-  --accent: #3b82f6;
-  --text-dark: #0f172a;
-  --text-light: #475569;
-  --text-muted: #64748b;
+  --ink: #102838;
+  --ink-soft: #14313f;
+  --ink-muted: #3d505f;
+  --ink-quiet: #55707f;
+  --paper: #f9fdff;
+  --line: #bfd9e6;
+  --line-soft: #d9e8f0;
+  --accent: #ef6f51;
+  --accent-2: #f5af57;
+  --accent-3: #56c9b7;
+  --pill-ink: #0e2735;
+  --card-bg: rgba(255, 255, 255, 0.82);
+
+  color: var(--ink-soft);
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  color: var(--text-dark);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-#root {
+  margin: 0;
   min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(157, 221, 255, 0.34), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(255, 193, 133, 0.22), transparent 44%),
+    radial-gradient(circle at 60% 10%, rgba(255, 202, 216, 0.28), transparent 42%),
+    linear-gradient(180deg, #e8f6fd 0%, #fff8ee 100%);
+  background-attachment: fixed;
 }
+
+html { scroll-behavior: smooth; }
+#root { min-height: 100vh; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Fraunces", Georgia, serif;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+p { margin: 0; }
 
 a {
-  color: var(--primary);
+  color: #124d72;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 180ms ease;
 }
-
-a:hover {
-  color: var(--secondary);
-}
+a:hover { color: #0a2f46; }
 
 button {
   font-family: inherit;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: rgba(16, 40, 56, 0.35);
   border-radius: 5px;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
-}
+::-webkit-scrollbar-thumb:hover { background: rgba(16, 40, 56, 0.6); }

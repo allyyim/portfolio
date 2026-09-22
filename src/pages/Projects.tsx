@@ -1,20 +1,20 @@
 import { ProjectCard } from '../components/ProjectCard';
-import { GlassCard } from '../components/GlassCard';
 import { projects } from '../data/projects';
 
 export function Projects() {
   return (
-    <main style={{ padding: '2rem 0' }}>
-      <div className="container">
-        <GlassCard className="mb-4">
-          <h1 className="gradient-text" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
-            My Projects 🛠️
-          </h1>
-          <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>
-            A collection of projects I've built, featuring full-stack development, machine learning, and cloud infrastructure expertise.
-          </p>
-        </GlassCard>
+    <>
+      <section className="hero" style={{ padding: '2rem 0 1rem' }}>
+        <span className="eyebrow">Projects</span>
+        <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', margin: '0.75rem 0 1rem', maxWidth: '20ch' }}>
+          Things I&apos;ve built
+        </h1>
+        <p className="lead-body">
+          A mix of full-stack apps, infrastructure tooling, and side experiments across systems, data, and interfaces.
+        </p>
+      </section>
 
+      <section style={{ padding: '1rem 0 2rem' }}>
         <div className="row g-4">
           {projects.map((project) => (
             <div key={project.id} className="col-md-6 col-lg-4">
@@ -22,7 +22,7 @@ export function Projects() {
             </div>
           ))}
         </div>
-      </div>
-    </main>
+      </section>
+    </>
   );
 }

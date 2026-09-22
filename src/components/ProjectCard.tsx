@@ -7,34 +7,26 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <GlassCard className="fade-in">
-      <div className="d-flex flex-column h-100">
-        <div className="mb-3">
-          <span style={{ fontSize: '2.5rem' }}>{project.icon}</span>
-        </div>
-        <h3 className="mb-2" style={{ color: 'var(--text-light)', fontSize: '1.3rem' }}>
-          {project.title}
-        </h3>
-        <p className="mb-3" style={{ color: 'var(--text-muted)', flexGrow: 1 }}>
-          {project.description}
-        </p>
-        <div className="mb-3">
-          {project.technologies.map((tech) => (
-            <span key={tech} className="tech-badge">
-              {tech}
-            </span>
-          ))}
-        </div>
-        <a
-          href={project.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="glass-button"
-          style={{ display: 'inline-block' }}
-        >
-          View Repository →
-        </a>
+    <GlassCard className="fade-in" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{project.icon}</div>
+      <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{project.title}</h3>
+      <p style={{ color: 'var(--ink-muted)', marginBottom: '1rem', flexGrow: 1, lineHeight: 1.6 }}>
+        {project.description}
+      </p>
+      <div style={{ marginBottom: '1rem' }}>
+        {project.technologies.map((tech) => (
+          <span key={tech} className="tech-badge">{tech}</span>
+        ))}
       </div>
+      <a
+        href={project.repoUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="glass-button secondary"
+        style={{ alignSelf: 'flex-start' }}
+      >
+        View Repository →
+      </a>
     </GlassCard>
   );
 }
