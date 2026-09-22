@@ -7,34 +7,36 @@ export function Hero() {
     <section style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', padding: '2rem 0' }}>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6 mb-4 mb-md-0">
+          <div className="col-md-12">
             <GlassCard>
-              <h1 className="gradient-text" style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem' }}>
-                Hey there! 👋
+              <h1 style={{
+                fontSize: '3.5rem',
+                fontWeight: 'bold',
+                marginBottom: '1.5rem',
+                color: '#0f172a',
+                fontFamily: 'Georgia, serif',
+                lineHeight: '1.2'
+              }}>
+                {bioData.name}
               </h1>
-              <h2 style={{ fontSize: '1.8rem', color: 'var(--text-light)', marginBottom: '1.5rem', fontWeight: 500 }}>
-                I'm {bioData.name}
+              <h2 style={{ fontSize: '1.5rem', color: '#1e293b', marginBottom: '1.5rem', fontWeight: 400 }}>
+                {bioData.title}
               </h2>
-              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+              <p style={{ fontSize: '1.1rem', color: '#475569', marginBottom: '1.5rem', lineHeight: '1.8', maxWidth: '600px' }}>
                 {bioData.subtitle}
               </p>
-              <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.8' }}>
+              <p style={{ color: '#64748b', marginBottom: '2rem', lineHeight: '1.8', maxWidth: '650px' }}>
                 {bioData.bio}
               </p>
               <div className="d-flex gap-3 flex-wrap">
                 <Link to="/projects" className="glass-button">
-                  Explore My Work →
+                  View Projects
                 </Link>
-                <a href="https://github.com/allyyim" target="_blank" rel="noopener noreferrer" className="glass-button" style={{ background: 'rgba(255, 255, 255, 0.1)', border: '1px solid var(--glass-border)' }}>
+                <a href="https://github.com/allyyim" target="_blank" rel="noopener noreferrer" className="glass-button" style={{ background: '#f1f5f9', color: '#1e293b', border: '1px solid #e2e8f0' }}>
                   GitHub
                 </a>
               </div>
             </GlassCard>
-          </div>
-          <div className="col-md-6 text-center">
-            <div style={{ fontSize: '8rem', animation: 'float 3s ease-in-out infinite' }}>
-              💻
-            </div>
           </div>
         </div>
       </div>
