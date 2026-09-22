@@ -9,8 +9,9 @@ export const bioData = {
     period: 'August 2020 - May 2024',
   },
   skills: {
-    languages: ['C#', 'Python', 'Java', 'C++', 'TypeScript', 'JavaScript', 'SQL', 'PowerShell', 'Rust'],
-    frameworks: ['ASP.NET Core', 'React', 'Node.js', 'Azure', 'CosmosDB', 'PostgreSQL', 'MongoDB'],
+    languages: ['C#', 'Python', 'Java', 'C++', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SQL', 'PowerShell', 'Rust'],
+    frameworks: ['ASP.NET Core', 'React', 'Angular', 'Node.js', 'Bootstrap', 'Vite', 'Azure'],
+    databases: ['CosmosDB', 'MySQL', 'PostgreSQL', 'MongoDB'],
     tools: ['Docker', 'Git', 'GitHub Actions', 'Azure DevOps', 'CI/CD', 'Linux', 'TensorFlow', 'Pandas', 'NumPy'],
   },
   experience: [

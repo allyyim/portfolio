@@ -63,7 +63,7 @@ export function About() {
         </GlassCard>
 
         <div className="row g-4 mb-4">
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-3">
             <GlassCard style={{ height: '100%' }}>
               <span className="eyebrow">Languages</span>
               <div style={{ marginTop: '0.9rem' }}>
@@ -71,7 +71,7 @@ export function About() {
               </div>
             </GlassCard>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-3">
             <GlassCard style={{ height: '100%' }}>
               <span className="eyebrow">Frameworks &amp; Cloud</span>
               <div style={{ marginTop: '0.9rem' }}>
@@ -79,7 +79,15 @@ export function About() {
               </div>
             </GlassCard>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-6 col-lg-3">
+            <GlassCard style={{ height: '100%' }}>
+              <span className="eyebrow">Databases</span>
+              <div style={{ marginTop: '0.9rem' }}>
+                {bioData.skills.databases.map((s) => <span key={s} className="tech-badge">{s}</span>)}
+              </div>
+            </GlassCard>
+          </div>
+          <div className="col-md-6 col-lg-3">
             <GlassCard style={{ height: '100%' }}>
               <span className="eyebrow">Tools &amp; DevOps</span>
               <div style={{ marginTop: '0.9rem' }}>
