@@ -18,15 +18,36 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <span key={tech} className="tech-badge">{tech}</span>
         ))}
       </div>
-      <a
-        href={project.repoUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="glass-button secondary"
-        style={{ alignSelf: 'flex-start' }}
-      >
-        View Repository →
-      </a>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
+        {project.liveUrl && (
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-button"
+          >
+            Live site →
+          </a>
+        )}
+        {project.storeUrl && (
+          <a
+            href={project.storeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-button secondary"
+          >
+            Microsoft Store
+          </a>
+        )}
+        <a
+          href={project.repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="glass-button secondary"
+        >
+          Repository →
+        </a>
+      </div>
     </GlassCard>
   );
 }

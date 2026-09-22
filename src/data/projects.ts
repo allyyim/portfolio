@@ -5,6 +5,8 @@ export interface Project {
   icon: string;
   technologies: string[];
   repoUrl: string;
+  liveUrl?: string;
+  storeUrl?: string;
   featured: boolean;
 }
 
@@ -16,6 +18,8 @@ export const projects: Project[] = [
     icon: '🍵',
     technologies: ['React', 'TypeScript', 'Bootstrap', 'Node.js', 'PostgreSQL', 'TensorFlow.js', 'GitHub Actions'],
     repoUrl: 'https://github.com/allyyim/matcha_ratings',
+    liveUrl: 'https://allyyim.github.io/matchaRatings/',
+    storeUrl: 'https://apps.microsoft.com/detail/9plprt4v9c7d?hl=en-US&gl=US',
     featured: true,
   },
   {
