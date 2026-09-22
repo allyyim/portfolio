@@ -62,6 +62,7 @@ export const bioData = {
   ],
   contact: {
     github: 'https://github.com/allyyim',
+    linkedin: 'https://www.linkedin.com/in/alison-yim/',
     email: 'alison@example.com',
   },
 };

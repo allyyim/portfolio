@@ -14,6 +14,7 @@ export function Footer() {
           <h5>Connect</h5>
           <ul>
             <li><a href={bioData.contact.github} target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href={bioData.contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             <li><a href={`mailto:${bioData.contact.email}`}>Email</a></li>
           </ul>
         </div>

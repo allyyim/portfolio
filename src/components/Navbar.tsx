@@ -26,6 +26,14 @@ export function Navbar() {
         >
           GitHub
         </a>
+        <a
+          href="https://www.linkedin.com/in/alison-yim/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link"
+        >
+          LinkedIn
+        </a>
       </div>
     </nav>
   );
