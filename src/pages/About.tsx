@@ -32,23 +32,31 @@ export function About() {
         </GlassCard>
 
         <GlassCard className="mb-4">
-          <span className="eyebrow">Experience</span>
-          <h2 style={{ fontSize: '1.5rem', margin: '0.6rem 0 1.25rem' }}>Where I&apos;ve worked</h2>
+          <span className="eyebrow">Journey</span>
+          <h2 style={{ fontSize: '1.5rem', margin: '0.6rem 0 0.75rem' }}>How I got here</h2>
+          <p style={{ color: 'var(--ink-muted)', marginBottom: '1.5rem', lineHeight: 1.7, maxWidth: '62ch' }}>
+            A short story of the roles that shaped how I think about software — told in the order they happened, most recent first.
+          </p>
           <div className="timeline">
             {bioData.experience.map((job, idx) => (
               <div key={idx} className="timeline-item">
                 <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
                   <div>
+                    {job.chapter && (
+                      <div style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '0.78rem', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '0.35rem' }}>
+                        {job.chapter}
+                      </div>
+                    )}
                     <div className="timeline-title">{job.title}</div>
                     <div className="timeline-meta">{job.company} · {job.location}</div>
                   </div>
                   <span className="timeline-period">{job.period}</span>
                 </div>
-                <ul>
-                  {job.highlights.map((h, i) => (
-                    <li key={i}>{h}</li>
-                  ))}
-                </ul>
+                {job.story && (
+                  <p style={{ color: 'var(--ink-muted)', marginTop: '0.75rem', lineHeight: 1.7, maxWidth: '65ch' }}>
+                    {job.story}
+                  </p>
+                )}
               </div>
             ))}
           </div>
