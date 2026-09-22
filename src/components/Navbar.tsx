@@ -1,28 +1,50 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen]);
+
+  const close = () => setIsOpen(false);
+
   return (
-    <nav className="nav-shell">
-      <Link to="/" className="nav-brand">Alison Yim</Link>
+    <nav className={`nav-shell ${isOpen ? 'open' : ''}`}>
+      <Link to="/" className="nav-brand" onClick={close}>Alison Yim</Link>
       <button
         className="nav-toggle"
         onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle navigation"
+        aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
+        aria-expanded={isOpen}
       >
-        ☰
+        <span className={`nav-toggle-icon ${isOpen ? 'open' : ''}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
       </button>
-      <div className={`nav-links ${isOpen ? '' : 'collapsed'}`}>
-        <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
-        <Link to="/projects" className="nav-link" onClick={() => setIsOpen(false)}>Projects</Link>
-        <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About</Link>
+      <div className={`nav-links ${isOpen ? 'open' : 'collapsed'}`}>
+        <NavLink to="/" end className="nav-link" onClick={close}>Home</NavLink>
+        <NavLink to="/projects" className="nav-link" onClick={close}>Projects</NavLink>
+        <NavLink to="/about" className="nav-link" onClick={close}>About</NavLink>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link nav-cta"
+          onClick={close}
+        >
+          Resume ↓
+        </a>
         <a
           href="https://github.com/allyyim"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-link"
+          onClick={close}
         >
           GitHub
         </a>
@@ -31,6 +53,7 @@ export function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           className="nav-link"
+          onClick={close}
         >
           LinkedIn
         </a>
