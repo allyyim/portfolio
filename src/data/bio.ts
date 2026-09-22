@@ -20,7 +20,7 @@ export const bioData = {
       period: 'July 2024 - Present',
       location: 'Redmond, WA',
       chapter: 'Where I am now',
-      story: 'I own slices of Azure control-plane infrastructure in C#. I shipped ARM-based deployment automation that cut deployment overhead by ~80%, migrated 50% of production operations to event-driven REST APIs, and hardened the system with CosmosDB models, structured telemetry, and IAM/RBAC-aware request tracing that on-call actually relies on.',
+      story: 'I contribute to Azure control-plane infrastructure in C#. I shipped ARM-based deployment automation that cut deployment overhead by ~80%, migrated 50% of production operations to event-driven REST APIs, and hardened the system with CosmosDB models, structured telemetry, and IAM/RBAC-aware request tracing that on-call actually relies on.',
       highlights: [
         'Engineer C# Azure control-plane infrastructure, reducing deployment overhead by ~80% via automated ARM-based workflows',
         'Develop distributed, concurrent backend services and scalable CosmosDB data models with production observability',
@@ -47,7 +47,7 @@ export const bioData = {
       period: 'August 2023 - May 2024',
       location: 'Bethlehem, PA',
       chapter: 'Learning to ask better questions',
-      story: 'Built a Python + pandas pipeline turning 833 raw data points into 7 MATLAB visualizations, and classified open-ended responses from 110 users into themes via text analysis. Synthesized 200+ sources and 24 user tests into evidence-based product strategy — sharpening how I turn fuzzy problems into rigorous answers.',
+      story: 'Built a Python + pandas pipeline turning 833 raw data points into 7 MATLAB visualizations, and classified open-ended responses from 110 users into themes via text analysis. Synthesized 200+ sources and 24 user tests into evidence-based product strategy — sharpening how I turn ambiguous problems into rigorous answers.',
       highlights: [
         'Built Python (pandas) pipeline analyzing 833 data points into 7 MATLAB visualizations',
         'Classified open-ended responses from 110 users into themes via text analysis',
