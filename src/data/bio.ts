@@ -11,7 +11,7 @@ export const bioData = {
   skills: {
     languages: ['C#', 'Python', 'Java', 'C++', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SQL', 'PowerShell', 'Rust'],
     frameworks: ['ASP.NET Core', 'React', 'Angular', 'Node.js', 'Bootstrap', 'Vite', 'Azure'],
-    databases: ['CosmosDB', 'MySQL', 'PostgreSQL', 'MongoDB'],
+    databases: ['CosmosDB', 'MySQL', 'PostgreSQL', 'MongoDB', 'Supabase'],
     tools: ['Docker', 'Git', 'GitHub Actions', 'Azure DevOps', 'CI/CD', 'Linux', 'TensorFlow', 'Pandas', 'NumPy'],
   },
   experience: [
