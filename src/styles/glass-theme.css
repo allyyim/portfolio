@@ -112,6 +112,31 @@
   margin-top: auto;
 }
 
+.see-more-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  transition: transform 180ms ease, color 180ms ease, background 180ms ease;
+}
+
+.see-more-eyebrow:hover {
+  transform: translateY(-1px);
+  color: var(--accent);
+  background: #ffffff;
+}
+
 .tech-badge {
   display: inline-block;
   background: rgba(255, 255, 255, 0.86);

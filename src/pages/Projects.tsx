@@ -24,6 +24,16 @@ export function Projects() {
             </div>
           ))}
         </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2.5rem' }}>
+          <a
+            href="https://github.com/allyyim"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="see-more-eyebrow"
+          >
+            See more on GitHub →
+          </a>
+        </div>
       </section>
     </>
   );

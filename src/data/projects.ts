@@ -14,7 +14,7 @@ export const projects: Project[] = [
   {
     id: 'matcha-ratings',
     title: 'Sip & Score (Matcha Ratings)',
-    description: 'Why: matcha drinkers had no shared, offline-friendly way to track and compare drinks. How: built an offline-first PWA with JWT-secured REST APIs, a TensorFlow.js recommendation engine, and a PostgreSQL backend — shipped to the web and Microsoft Store.',
+    description: 'Matcha drinkers had no shared, offline-friendly way to track and compare drinks — so I built an offline-first PWA with JWT-secured REST APIs, a TensorFlow.js recommendation engine, and a PostgreSQL backend, shipped to the web and the Microsoft Store.',
     icon: '🍵',
     technologies: ['React', 'TypeScript', 'Bootstrap', 'Node.js', 'PostgreSQL', 'TensorFlow.js', 'GitHub Actions'],
     repoUrl: 'https://github.com/allyyim/matcha_ratings',
@@ -25,7 +25,7 @@ export const projects: Project[] = [
   {
     id: 'ado-prism',
     title: 'ADO Prism | MRTAthon 2025',
-    description: 'Why: critical context gets buried in Azure DevOps PR discussions and teams keep rebuilding the same extraction logic. How: used Azure OpenAI to classify PR comments in real time and surface them via markdown files and APIs.',
+    description: 'Critical context gets buried in Azure DevOps PR discussions and teams keep rebuilding the same extraction logic. ADO Prism uses Azure OpenAI to classify PR comments in real time and surface them as structured signals through markdown files and APIs.',
     icon: '🤖',
     technologies: ['C#', 'HTML', 'Azure OpenAI Foundry', 'Azure DevOps API', 'NLP'],
     repoUrl: 'https://github.com/allyyim/MRTAthon_hack2025',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     id: 'predictive-autoscaling',
     title: 'Predictive Autoscaling | Microsoft Hackathon 2024',
-    description: 'Why: Azure Monitor autoscaling reacted to load instead of anticipating it. How: extended it with memory metrics and richer training data, then tuned regularized ML.NET regression models for more accurate resource forecasts.',
+    description: 'Azure Monitor autoscaling reacted to load instead of anticipating it. I extended it with memory metrics and richer training data, then tuned regularized ML.NET regression models to forecast resource needs more accurately.',
     icon: '📈',
     technologies: ['C#', 'ML.NET', 'Azure Monitor', 'OxyPlot', 'TimeSeries'],
     repoUrl: 'https://github.com/allyyim/predictive_autoscaling',
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     id: 'pythia',
     title: 'Pythia',
-    description: 'Why: readers wanted a lightweight way to discover books matched to their taste without the noise. How: built a TypeScript frontend on the Goodreads API with a clean, responsive Bootstrap UI.',
+    description: 'Readers wanted a lightweight way to discover books matched to their taste without the noise of mainstream review sites. Pythia is a TypeScript frontend on the Goodreads API with a clean, responsive Bootstrap UI focused on the picking-your-next-read moment.',
     icon: '📖',
     technologies: ['TypeScript', 'HTML', 'CSS', 'Bootstrap', 'Goodreads API'],
     repoUrl: 'https://github.com/allyyim/Pythia',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   {
     id: 'readhot',
     title: 'ReadHot | FinTech Focus 2020',
-    description: 'Why: books and music both carry mood, but no tool bridged them. How: co-built a Flask + MongoDB app that combines Google Books, Open Library, IBM Watson NLP, and the Spotify API to generate playlists matching a book\'s themes — shipped during Wells Fargo\'s FinTech Focus fellowship.',
+    description: 'Books and music both carry mood, but nothing bridged them. During Wells Fargo\'s FinTech Focus fellowship, I co-built a Flask + MongoDB app that combines Google Books, Open Library, IBM Watson NLP, and the Spotify API to generate playlists matching a book\'s themes.',
     icon: '📚',
     technologies: ['Python', 'Flask', 'MongoDB', 'HTML', 'CSS', 'Bootstrap', 'Spotify API', 'Open Library API', 'IBM Watson'],
     repoUrl: 'https://github.com/bernardw11/ReadHot-project',
