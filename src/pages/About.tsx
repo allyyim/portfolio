@@ -11,10 +11,11 @@ export function About() {
         <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', margin: '0.75rem 0 1rem', maxWidth: '20ch' }}>
           Hi, I&apos;m Alison.
         </h1>
-        <p className="lead-body">{bioData.bio}</p>
+        <p className="lead-body">
+          I&apos;m a software engineer on Azure&apos;s control-plane at Microsoft, where I work on event-driven backend systems and cloud infrastructure that other engineers depend on.
+        </p>
         <p className="lead-body" style={{ marginTop: '0.75rem' }}>
-          I&apos;m interested in distributed systems, cloud infrastructure, and building tools that scale.
-          Currently at Microsoft working on Azure control-plane infrastructure and event-driven backend systems.
+          I studied Computer Science &amp; Business at Lehigh (honors, 2024). Outside the day job I tinker with full-stack side projects, applied ML, and developer tools — usually things I wish existed.
         </p>
       </section>
 
