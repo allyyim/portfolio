@@ -32,6 +32,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: 'pythia',
+    title: 'Pythia',
+    description: 'A book discovery and recommendation web app that pulls from the Goodreads API to help readers surface titles matched to their taste. Built with a hand-rolled TypeScript frontend and a clean, responsive Bootstrap UI.',
+    icon: '📖',
+    technologies: ['TypeScript', 'HTML', 'CSS', 'Bootstrap', 'Goodreads API'],
+    repoUrl: 'https://github.com/allyyim/Pythia',
+    featured: true,
+  },
+  {
     id: 'predictive-autoscaling',
     title: 'Predictive Autoscaling | Microsoft Hackathon 2024',
     description: 'Extended Azure Monitor predictive autoscaling with memory utilization metrics and expanded training datasets. Tuned ML.NET regression models with regularization for accurate resource forecasting.',
