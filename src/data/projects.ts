@@ -25,9 +25,9 @@ export const projects: Project[] = [
   {
     id: 'ado-prism',
     title: 'ADO Prism | MRTAthon 2025',
-    description: 'AI-powered internal engineering assistant that queries pull requests and reduces manual knowledge triage. Uses semantic NLP for critical PR comment classification. Hosted by Microsoft\'s Messaging and Real-Time Analytics org.',
+    description: 'ADO PRism discovers hidden knowledge inside Azure DevOps pull request discussions in real time. It uses Azure OpenAI to classify comments into actionable categories, then delivers structured signals through markdown files and APIs — so teams never have to rebuild knowledge extraction from scratch, and important insights are never overlooked. Hosted by Microsoft\'s Messaging and Real-Time Analytics org.',
     icon: '🤖',
-    technologies: ['C#', 'HTML', 'Azure OpenAI', 'NLP'],
+    technologies: ['C#', 'HTML', 'Azure OpenAI Foundry', 'Azure DevOps API', 'NLP'],
     repoUrl: 'https://github.com/allyyim/MRTAthon_hack2025',
     featured: true,
   },
