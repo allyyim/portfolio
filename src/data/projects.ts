@@ -40,4 +40,13 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/allyyim/predictive_autoscaling',
     featured: true,
   },
+  {
+    id: 'readhot',
+    title: 'ReadHot | FinTech Focus 2020',
+    description: 'Co-created a Flask web app that generates custom Spotify playlists matching the themes of a book. Combines Google Books, Open Library, IBM Watson NLP, and the Spotify API. Built during Wells Fargo\'s FinTech Focus fellowship — a four-week program hosted by Bank of America, Goldman Sachs, JPMorgan Chase, Morgan Stanley, and Wells Fargo.',
+    icon: '📚',
+    technologies: ['Python', 'Flask', 'MongoDB', 'HTML', 'CSS', 'Bootstrap', 'Spotify API', 'Open Library API', 'IBM Watson'],
+    repoUrl: 'https://github.com/bernardw11/ReadHot-project',
+    featured: true,
+  },
 ];

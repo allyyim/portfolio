@@ -68,6 +68,19 @@ export const bioData = {
         'Led 3-intern team as PM with Agile deliverables; presented findings to Azure Server Performance team',
       ],
     },
+    {
+      title: 'FinTech Focus Fellow',
+      company: 'Wells Fargo',
+      period: 'July 2020',
+      location: 'New York, NY',
+      chapter: 'Where it all started',
+      story: 'The problem: as a first-year CS student, I had never shipped anything beyond a class assignment. FinTech Focus — an immersive four-week program hosted by Bank of America, Goldman Sachs, JPMorgan Chase, Morgan Stanley, and Wells Fargo — dropped us straight into building full-stack MVPs in Flask, Python, MongoDB, HTML, and CSS. I co-created ReadHot, a Flask app that generates custom Spotify playlists matching the themes of a book using Google Books, Open Library, IBM Watson, and Spotify APIs. My first taste of gluing real APIs together into something people could actually use — and the reason I stayed in software.',
+      highlights: [
+        'Built full-stack Flask web applications with MongoDB, Python, HTML, and CSS',
+        'Iterated from prototype → MVP → final web app presentations',
+        'Co-created ReadHot: a Flask app integrating Google Books, Open Library, IBM Watson, and Spotify APIs to generate book-themed playlists',
+      ],
+    },
   ],
   contact: {
     github: 'https://github.com/allyyim',
