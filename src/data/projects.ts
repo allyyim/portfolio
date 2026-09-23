@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     id: 'pythia',
     title: 'Pythia',
-    description: 'Readers wanted a lightweight way to discover books matched to their taste without the noise of mainstream review sites. Pythia is a TypeScript frontend on the Goodreads API with a clean, responsive Bootstrap UI focused on the picking-your-next-read moment.',
+    description: 'Friends kept asking me for book recs — usually stuck after a favorite read, or loving a genre but not knowing which subgenre to explore next. Pythia is a TypeScript app on top of the Goodreads API with a clean, responsive Bootstrap UI that surfaces similar titles and subgenre threads from a book you already like.',
     icon: '📖',
     technologies: ['TypeScript', 'HTML', 'CSS', 'Bootstrap', 'Goodreads API'],
     repoUrl: 'https://github.com/allyyim/Pythia',

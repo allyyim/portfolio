@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem clamp(1rem, 3vw, 1.75rem) 3rem;
   position: relative;
+  overflow: hidden;
 }
 
 .app-shell::before,
