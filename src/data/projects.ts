@@ -52,7 +52,7 @@ export const projects: Project[] = [
   {
     id: 'readhot',
     title: 'ReadHot | FinTech Focus 2020',
-    description: 'Books and music both carry mood, but nothing bridged them. During Wells Fargo\'s FinTech Focus fellowship, I co-built a Flask + MongoDB app that combines Google Books, Open Library, IBM Watson NLP, and the Spotify API to generate playlists matching a book\'s themes.',
+    description: 'ReadHot was framed as soundtracks to the books we loved reading. During Wells Fargo\'s FinTech Focus fellowship, I co-built a Flask + MongoDB app that combines Google Books, Open Library, IBM Watson NLP, and the Spotify API to generate playlists matching the themes of a book.',
     icon: '📚',
     technologies: ['Python', 'Flask', 'MongoDB', 'HTML', 'CSS', 'Bootstrap', 'Spotify API', 'Open Library API', 'IBM Watson'],
     repoUrl: 'https://github.com/bernardw11/ReadHot-project',
