@@ -5,7 +5,7 @@ import { projects } from '../data/projects';
 import { Link } from 'react-router-dom';
 
 export function Home() {
-  const featuredProjects = projects.filter((p) => p.featured).slice(0, 3);
+  const featuredProjects = projects.filter((p) => p.featured).slice(0, 4);
 
   return (
     <>
@@ -15,7 +15,7 @@ export function Home() {
         <h2 className="section-heading">Featured Projects</h2>
         <div className="row g-4 mb-4">
           {featuredProjects.map((project) => (
-            <div key={project.id} className="col-md-6 col-lg-4">
+            <div key={project.id} className="col-md-6 col-lg-3">
               <ProjectCard project={project} />
             </div>
           ))}
