@@ -15,7 +15,7 @@ export function About() {
           I&apos;m a software engineer on Azure&apos;s control-plane at Microsoft, where I work on event-driven backend systems and cloud infrastructure that other engineers depend on.
         </p>
         <p className="lead-body" style={{ marginTop: '0.75rem' }}>
-          I studied Computer Science &amp; Business at Lehigh (honors, 2024). Outside the day job I tinker with full-stack side projects, applied ML, and developer tools — usually things I wish existed.
+          I studied Computer Science &amp; Business at Lehigh (honors, 2024). Outside the day job I tinker with full-stack side projects, applied ML, and developer tools, usually things I wish existed.
         </p>
       </section>
 
@@ -36,7 +36,7 @@ export function About() {
           <span className="eyebrow">Journey</span>
           <h2 style={{ fontSize: '1.5rem', margin: '0.6rem 0 0.75rem' }}>How I got here</h2>
           <p style={{ color: 'var(--ink-muted)', marginBottom: '1.5rem', lineHeight: 1.7, maxWidth: '62ch' }}>
-            A short story of the roles that shaped how I think about software — told in the order they happened, most recent first.
+            A short story of the roles that shaped how I think about software, told in the order they happened, most recent first.
           </p>
           <div className="timeline">
             {bioData.experience.map((job, idx) => (

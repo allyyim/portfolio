@@ -2,7 +2,7 @@ export const bioData = {
   name: 'Alison Yim',
   title: 'Software Engineer @ Microsoft',
   subtitle: 'Systems, infrastructure, and full-stack development',
-  bio: 'Software engineer at Microsoft. I build distributed systems and cloud infrastructure — and I like turning ambiguous problems into things people can actually use.',
+  bio: 'Software engineer at Microsoft. I build distributed systems and cloud infrastructure, and I like turning ambiguous problems into things people can actually use.',
   education: {
     school: 'Lehigh University',
     degree: 'B.S. Computer Science & Business (Honors)',
@@ -48,7 +48,7 @@ export const bioData = {
       period: 'August 2023 - May 2024',
       location: 'Bethlehem, PA',
       chapter: 'Data and research',
-      story: 'The lab had rich but messy user-study data — 833 raw data points and open-ended responses from 110 users — with no repeatable way to turn any of it into product decisions. I built a Python + pandas pipeline that produced 7 MATLAB visualizations, used text analysis to cluster free-form responses into themes, and synthesized 200+ sources and 24 user tests into an evidence-based product strategy.',
+      story: 'The lab had rich but messy user-study data: 833 raw data points and open-ended responses from 110 users, with no repeatable way to turn any of it into product decisions. I built a Python + pandas pipeline that produced 7 MATLAB visualizations, used text analysis to cluster free-form responses into themes, and synthesized 200+ sources and 24 user tests into an evidence-based product strategy.',
       highlights: [
         'Built Python (pandas) pipeline analyzing 833 data points into 7 MATLAB visualizations',
         'Classified open-ended responses from 110 users into themes via text analysis',
@@ -61,7 +61,7 @@ export const bioData = {
       period: 'May - August 2022',
       location: 'Redmond, WA',
       chapter: 'First systems work',
-      story: 'Azure Server Performance testing was slow — engineers were hand-picking VM configurations and combing through logs. In a dual PM + SWE role, I designed a VM-placement algorithm that maximized valid test-config utilization and automated deployment plus validation with PowerShell and Kusto, cutting log analysis time by 99.84%. I also led a 3-intern team as PM and presented findings to the Azure Server Performance team.',
+      story: 'Azure Server Performance testing was slow; engineers were hand-picking VM configurations and combing through logs. In a dual PM + SWE role, I designed a VM-placement algorithm that maximized valid test-config utilization and automated deployment plus validation with PowerShell and Kusto, cutting log analysis time by 99.84%. I also led a 3-intern team as PM and presented findings to the Azure Server Performance team.',
       highlights: [
         'Designed VM-placement algorithm optimizing valid test configurations for maximum resource utilization',
         'Automated VM deployment and validation via PowerShell and Kusto, cutting log analysis time by 99.84%',

@@ -14,7 +14,7 @@ export const projects: Project[] = [
   {
     id: 'matcha-ratings',
     title: 'Sip & Score (Matcha Ratings)',
-    description: 'Matcha drinkers had no shared, offline-friendly way to track and compare drinks — so I built an offline-first PWA with JWT-secured REST APIs, a TensorFlow.js recommendation engine, and a PostgreSQL backend, shipped to the web and the Microsoft Store.',
+    description: 'Matcha drinkers had no shared, offline-friendly way to track and compare drinks, so I built an offline-first PWA with JWT-secured REST APIs, a TensorFlow.js recommendation engine, and a PostgreSQL backend, shipped to the web and the Microsoft Store.',
     icon: '🍵',
     technologies: ['React', 'TypeScript', 'Bootstrap', 'Node.js', 'PostgreSQL', 'TensorFlow.js', 'GitHub Actions'],
     repoUrl: 'https://github.com/allyyim/matcha_ratings',
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     id: 'pythia',
     title: 'Pythia',
-    description: 'Friends kept asking me for book recs — usually stuck after a favorite read, or loving a genre but not knowing which subgenre to explore next. Pythia is a TypeScript app on top of the Goodreads API with a clean, responsive Bootstrap UI that surfaces similar titles and subgenre threads from a book you already like.',
+    description: 'Friends kept asking me for book recs. They were usually stuck after a favorite read, or loved a genre but did not know which subgenre to explore next. Pythia is a TypeScript app on top of the Goodreads API with a clean, responsive Bootstrap UI that surfaces similar titles and subgenre threads from a book you already like.',
     icon: '📖',
     technologies: ['TypeScript', 'HTML', 'CSS', 'Bootstrap', 'Goodreads API'],
     repoUrl: 'https://github.com/allyyim/Pythia',
