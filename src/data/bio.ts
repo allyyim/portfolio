@@ -48,7 +48,7 @@ export const bioData = {
       period: 'August 2023 - May 2024',
       location: 'Bethlehem, PA',
       chapter: 'Learning to ask better questions',
-      story: 'The problem: the lab had rich but messy user-study data — 833 raw data points and open-ended responses from 110 users — with no repeatable way to turn it into product decisions. I built a Python + pandas pipeline that produced 7 MATLAB visualizations, applied text analysis to classify open-ended responses into themes, and synthesized 200+ sources with 24 user tests into evidence-based product strategy. That year sharpened how I turn ambiguous problems into rigorous, defensible answers.',
+      story: 'The lab had rich but messy user-study data — 833 raw data points, open-ended responses from 110 users, and no repeatable way to turn any of it into product decisions. I built a Python + pandas pipeline that produced 7 MATLAB visualizations, used text analysis to cluster the free-form responses into themes, and pulled 200+ sources and 24 user tests together into an evidence-based product strategy. That year taught me how to sit with an ambiguous problem long enough to give it a rigorous, defensible answer.',
       highlights: [
         'Built Python (pandas) pipeline analyzing 833 data points into 7 MATLAB visualizations',
         'Classified open-ended responses from 110 users into themes via text analysis',
