@@ -23,16 +23,18 @@ export function Projects() {
               <ProjectCard project={project} />
             </div>
           ))}
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2.5rem' }}>
-          <a
-            href="https://github.com/allyyim"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="see-more-eyebrow"
-          >
-            See more on GitHub →
-          </a>
+          <div className="col-md-6 col-lg-4">
+            <a
+              href="https://github.com/allyyim"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="see-more-tile"
+            >
+              <span className="see-more-eyebrow-inline">More on GitHub</span>
+              <span className="see-more-arrow">→</span>
+              <span className="see-more-sub">Explore the rest of my work</span>
+            </a>
+          </div>
         </div>
       </section>
     </>
