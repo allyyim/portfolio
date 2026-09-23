@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     id: 'predictive-autoscaling',
     title: 'Predictive Autoscaling',
-    description: 'Extended Azure Monitor predictive autoscaling with memory utilization metrics and expanded training datasets. Tuned ML.NET regression models with regularization for accurate resource forecasting.',
+    description: 'Built at Microsoft Hackathon 2024. Extended Azure Monitor predictive autoscaling with memory utilization metrics and expanded training datasets. Tuned ML.NET regression models with regularization for accurate resource forecasting.',
     icon: '📈',
     technologies: ['C#', 'ML.NET', 'Azure Monitor', 'OxyPlot', 'TimeSeries'],
     repoUrl: 'https://github.com/allyyim/predictive_autoscaling',
