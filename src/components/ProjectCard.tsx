@@ -18,15 +18,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <span key={tech} className="tech-badge">{tech}</span>
         ))}
       </div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
+      <div className="card-actions">
         {project.liveUrl && (
           <a
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-button"
+            className="glass-button compact"
           >
-            Live site →
+            Live →
           </a>
         )}
         {project.storeUrl && (
@@ -34,18 +34,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
             href={project.storeUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-button secondary"
+            className="glass-button secondary compact"
           >
-            Microsoft Store
+            Store
           </a>
         )}
         <a
           href={project.repoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="glass-button secondary"
+          className="glass-button secondary compact"
         >
-          Repository →
+          Repo →
         </a>
       </div>
     </GlassCard>

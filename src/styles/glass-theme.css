@@ -93,6 +93,25 @@
   box-shadow: 0 10px 20px rgba(16, 42, 64, 0.14);
 }
 
+.glass-button.compact {
+  font-size: 0.82rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(239, 111, 81, 0.2);
+}
+
+.glass-button.secondary.compact {
+  box-shadow: 0 3px 8px rgba(16, 42, 64, 0.08);
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-top: auto;
+}
+
 .tech-badge {
   display: inline-block;
   background: rgba(255, 255, 255, 0.86);
