@@ -163,7 +163,7 @@
   justify-content: center;
   gap: 1rem;
   position: relative;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .carousel-viewport {
@@ -218,7 +218,7 @@
 
 .carousel-dots {
   position: absolute;
-  bottom: -2.25rem;
+  bottom: 0.5rem;
   left: 0;
   right: 0;
   display: flex;
