@@ -11,11 +11,7 @@ export function Hero() {
 
       <div className="hero-center">
         <h1 className="wordmark">{bioData.name.toLowerCase()}</h1>
-        <div className="hero-meta">
-          <span>{bioData.title}</span>
-          <span className="meta-dot" aria-hidden />
-          <span>Redmond, WA</span>
-        </div>
+        <p className="hero-role">{bioData.title}</p>
         <p className="hero-lead">{bioData.bio}</p>
         <div className="hero-actions">
           <Link to="/projects" className="btn-pill btn-pill-solid">View Projects →</Link>
@@ -29,8 +25,6 @@ export function Hero() {
           </a>
         </div>
       </div>
-
-      <span className="hero-orb" aria-hidden />
     </section>
   );
 }

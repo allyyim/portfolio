@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding: 1.5rem clamp(1rem, 3vw, 1.75rem) 3rem;
   position: relative;
-  overflow: hidden;
 }
 
 .glass-card {
@@ -222,7 +221,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
   background: rgba(253, 246, 244, 0.72);
   backdrop-filter: blur(10px);
 }
@@ -234,6 +233,8 @@
   font-size: 1.15rem;
   color: var(--ink) !important;
   letter-spacing: -0.01em;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -384,27 +385,14 @@
   letter-spacing: -0.01em;
 }
 
-.hero-meta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.6rem;
-  flex-wrap: wrap;
+.hero-role {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-muted);
   margin-bottom: 1.5rem;
-}
-
-.meta-dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--accent);
-  flex: none;
 }
 
 .hero-lead {
@@ -460,17 +448,7 @@
 }
 
 .hero-orb {
-  position: absolute;
-  right: clamp(-80px, -6vw, -20px);
-  bottom: clamp(-100px, -10vh, -40px);
-  width: clamp(220px, 34vw, 420px);
-  height: clamp(220px, 34vw, 420px);
-  border-radius: 50%;
-  background: radial-gradient(circle at 32% 28%, var(--accent-2), var(--accent) 55%, var(--accent-3) 100%);
-  filter: blur(50px);
-  opacity: 0.5;
-  z-index: -1;
-  pointer-events: none;
+  display: none;
 }
 
 .footer-shell {

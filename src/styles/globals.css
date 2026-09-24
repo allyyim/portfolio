@@ -28,13 +28,37 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(ellipse 70% 55% at 18% 12%, rgba(255, 202, 216, 0.55), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 85% 8%, rgba(255, 193, 133, 0.4), transparent 60%),
-    radial-gradient(ellipse 65% 55% at 90% 90%, rgba(86, 201, 183, 0.28), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 5% 95%, rgba(157, 221, 255, 0.3), transparent 60%),
-    linear-gradient(180deg, #fdf3f2 0%, #fbf7ee 55%, #f7f9f6 100%);
-  background-attachment: fixed;
+  background: linear-gradient(160deg, #fbeae7 0%, #fdf3ee 45%, #fbf6ec 100%);
+  position: relative;
+  isolation: isolate;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(60px);
+}
+
+body::before {
+  width: min(60vw, 640px);
+  height: min(60vw, 640px);
+  right: min(-14vw, -160px);
+  bottom: min(-18vw, -200px);
+  background: radial-gradient(circle at 32% 28%, #d95d55, #a23b3f 55%, #6f2430 100%);
+  opacity: 0.9;
+}
+
+body::after {
+  width: min(34vw, 340px);
+  height: min(34vw, 340px);
+  left: min(-10vw, -90px);
+  bottom: min(-8vw, -70px);
+  background: radial-gradient(circle at 35% 30%, var(--accent-3), #2f8f82 70%);
+  opacity: 0.35;
 }
 
 html { scroll-behavior: smooth; }
