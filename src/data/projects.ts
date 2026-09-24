@@ -24,7 +24,7 @@ export const projects: Project[] = [
   },
   {
     id: 'ado-prism',
-    title: 'ADO Prism | MRTAthon 2025',
+    title: 'ADO Prism | Microsoft Hackathon 2024',
     description: 'A .NET 8 service that pulls Azure DevOps PRs via the REST API, uses Azure OpenAI to filter noise, and surfaces real engineering insight as markdown and a live dashboard.',
     icon: '🤖',
     technologies: ['C#', '.NET 8', 'HTML', 'JavaScript', 'CSS', 'Azure OpenAI Foundry', 'Azure DevOps REST API'],
@@ -33,7 +33,7 @@ export const projects: Project[] = [
   },
   {
     id: 'predictive-autoscaling',
-    title: 'Predictive Autoscaling | MRTAthon 2025',
+    title: 'Predictive Autoscaling | Microsoft MRTAthon 2025',
     description: 'Extended Azure Monitor autoscaling with memory metrics and tuned an ML.NET LBFGS Poisson regression model to forecast resource needs before load spikes.',
     icon: '📈',
     technologies: ['C#', '.NET', 'ML.NET', 'LBFGS Poisson Regression', 'Azure Monitor', 'OxyPlot'],
