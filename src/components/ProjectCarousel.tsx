@@ -6,13 +6,12 @@ interface ProjectCarouselProps {
   projects: Project[];
 }
 
-const SWIPE_THRESHOLD = 60;
+const SWIPE_THRESHOLD = 50;
 
 export function ProjectCarousel({ projects }: ProjectCarouselProps) {
   const [index, setIndex] = useState(0);
-  const [dragX, setDragX] = useState(0);
-  const [dragging, setDragging] = useState(false);
   const startX = useRef(0);
+  const tracking = useRef(false);
 
   const total = projects.length;
   const goTo = (i: number) => setIndex(((i % total) + total) % total);
@@ -21,21 +20,16 @@ export function ProjectCarousel({ projects }: ProjectCarouselProps) {
 
   const onPointerDown = (e: React.PointerEvent) => {
     startX.current = e.clientX;
-    setDragging(true);
-    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+    tracking.current = true;
   };
 
-  const onPointerMove = (e: React.PointerEvent) => {
-    if (!dragging) return;
-    setDragX(e.clientX - startX.current);
-  };
-
-  const endDrag = () => {
-    if (Math.abs(dragX) > SWIPE_THRESHOLD) {
-      if (dragX < 0) next(); else prev();
+  const onPointerUp = (e: React.PointerEvent) => {
+    if (!tracking.current) return;
+    tracking.current = false;
+    const deltaX = e.clientX - startX.current;
+    if (Math.abs(deltaX) > SWIPE_THRESHOLD) {
+      if (deltaX < 0) next(); else prev();
     }
-    setDragging(false);
-    setDragX(0);
   };
 
   const onKeyDown = (e: React.KeyboardEvent) => {
@@ -59,14 +53,10 @@ export function ProjectCarousel({ projects }: ProjectCarouselProps) {
         tabIndex={0}
         onKeyDown={onKeyDown}
         onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={endDrag}
-        onPointerLeave={() => dragging && endDrag()}
+        onPointerUp={onPointerUp}
+        onPointerCancel={() => { tracking.current = false; }}
       >
-        <div
-          className={`carousel-card ${dragging ? 'dragging' : ''}`}
-          style={{ transform: `translateX(${dragX}px) rotate(${dragX / 40}deg)` }}
-        >
+        <div className="carousel-card" key={projects[index].id}>
           <ProjectCard project={projects[index]} />
         </div>
       </div>

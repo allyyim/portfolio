@@ -104,7 +104,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="project-secondary-links">
           {secondaryLinks.map((link) => (
             <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer">
-              {link.label} ↗
+              {link.label} →
             </a>
           ))}
         </div>
