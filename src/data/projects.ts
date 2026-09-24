@@ -33,10 +33,10 @@ export const projects: Project[] = [
   },
   {
     id: 'predictive-autoscaling',
-    title: 'Predictive Autoscaling | Microsoft Hackathon 2024',
-    description: 'Extended Azure Monitor autoscaling with memory metrics and tuned ML.NET regression models to forecast resource needs before load spikes.',
+    title: 'Predictive Autoscaling | MRTAthon 2025',
+    description: 'Extended Azure Monitor autoscaling with memory metrics and tuned an ML.NET LBFGS Poisson regression model to forecast resource needs before load spikes.',
     icon: '📈',
-    technologies: ['C#', '.NET', 'ML.NET', 'Azure Monitor', 'TimeSeries', 'OxyPlot'],
+    technologies: ['C#', '.NET', 'ML.NET', 'LBFGS Poisson Regression', 'Azure Monitor', 'OxyPlot'],
     repoUrl: 'https://github.com/allyyim/predictive_autoscaling',
     featured: true,
   },
