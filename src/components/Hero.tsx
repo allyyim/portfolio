@@ -11,20 +11,12 @@ export function Hero() {
       <div className="hero-actions">
         <Link to="/projects" className="glass-button">View Projects</Link>
         <a
-          href="https://github.com/allyyim"
+          href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="glass-button secondary"
         >
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/alison-yim/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="glass-button secondary"
-        >
-          LinkedIn
+          Resume ↓
         </a>
       </div>
     </section>

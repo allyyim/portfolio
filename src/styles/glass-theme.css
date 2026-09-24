@@ -195,6 +195,19 @@
   box-shadow: inset 0 0 0 1px var(--line);
 }
 
+.tech-more {
+  background: transparent;
+  border: 1px dashed var(--line);
+  color: var(--ink-muted);
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.tech-more:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .tech-badge {
   display: inline-block;
   background: rgba(255, 255, 255, 0.86);

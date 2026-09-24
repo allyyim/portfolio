@@ -25,9 +25,9 @@ export const projects: Project[] = [
   {
     id: 'ado-prism',
     title: 'ADO Prism | MRTAthon 2025',
-    description: 'Modern engineering teams generate thousands of PRs, and the useful knowledge (error fixes, design decisions, team conventions) gets buried in comment threads mixed with bot noise. ADO Prism is a .NET 8 HttpListener service that pulls the last 30 days of PRs and comment threads from the Azure DevOps REST API, runs them through Azure OpenAI (GPT-5 Nano, Sweden Central) to filter noise and categorize insights, then serves the results as markdown and a JSON progress API. A lightweight HTML UI polls progress every 300ms so users see "X/Y PRs analyzed" in real time.',
+    description: 'PR discussions on Azure DevOps hide real engineering knowledge (fixes, design decisions, conventions) under bot noise. ADO Prism is a .NET 8 service that pulls the last 30 days of PRs via the Azure DevOps REST API, uses Azure OpenAI to filter noise and categorize insights, and serves the results as markdown plus a live-progress HTML dashboard.',
     icon: '🤖',
-    technologies: ['C#', '.NET 8', 'HTML', 'JavaScript', 'CSS', 'Azure OpenAI Foundry', 'Azure DevOps REST API', 'Managed Identity'],
+    technologies: ['C#', '.NET 8', 'HTML', 'JavaScript', 'CSS', 'Azure OpenAI Foundry', 'Azure DevOps REST API'],
     repoUrl: 'https://github.com/allyyim/MRTAthon_hack2025',
     featured: true,
   },

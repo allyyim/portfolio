@@ -1,9 +1,12 @@
 import { Project } from '../data/projects';
 import { GlassCard } from './GlassCard';
+import { useState } from 'react';
 
 interface ProjectCardProps {
   project: Project;
 }
+
+const MAX_VISIBLE_TECH = 6;
 
 function ProjectGlyph({ id }: { id: string }) {
   const common = {
@@ -69,6 +72,12 @@ function ProjectGlyph({ id }: { id: string }) {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const [showAll, setShowAll] = useState(false);
+  const overflow = project.technologies.length - MAX_VISIBLE_TECH;
+  const visibleTech = showAll || overflow <= 0
+    ? project.technologies
+    : project.technologies.slice(0, MAX_VISIBLE_TECH);
+
   return (
     <GlassCard className="fade-in" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <div className="project-glyph"><ProjectGlyph id={project.id} /></div>
@@ -77,9 +86,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
         {project.description}
       </p>
       <div style={{ marginBottom: '1rem' }}>
-        {project.technologies.map((tech) => (
+        {visibleTech.map((tech) => (
           <span key={tech} className="tech-badge">{tech}</span>
         ))}
+        {overflow > 0 && !showAll && (
+          <button
+            type="button"
+            className="tech-badge tech-more"
+            onClick={() => setShowAll(true)}
+          >
+            +{overflow} more
+          </button>
+        )}
       </div>
       <div className="card-actions">
         {project.liveUrl && (
