@@ -191,6 +191,81 @@
   overflow-y: auto;
   user-select: none;
   border-radius: 28px;
+  border: 2px solid var(--ink);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.project-description {
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-bottom: 0.9rem;
+}
+
+.project-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--line);
+  margin: 0.6rem 0 0.8rem;
+}
+
+.project-tech-line {
+  font-size: 0.78rem;
+  color: var(--ink-quiet);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.6rem;
+}
+
+.project-secondary-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 0.82rem;
+  margin-bottom: 1rem;
+}
+
+.project-secondary-links a {
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+.project-secondary-links a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.project-cta {
+  margin-top: auto;
+  width: 100%;
+  justify-content: center;
+  border: 2px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.project-cta:hover {
+  background: var(--ink);
+  color: #fff;
 }
 
 .carousel-arrow {

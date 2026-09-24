@@ -1,12 +1,9 @@
 import { Project } from '../data/projects';
 import { GlassCard } from './GlassCard';
-import { useState } from 'react';
 
 interface ProjectCardProps {
   project: Project;
 }
-
-const MAX_VISIBLE_TECH = 6;
 
 function ProjectGlyph({ id }: { id: string }) {
   const common = {
@@ -72,63 +69,55 @@ function ProjectGlyph({ id }: { id: string }) {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const [showAll, setShowAll] = useState(false);
-  const overflow = project.technologies.length - MAX_VISIBLE_TECH;
-  const visibleTech = showAll || overflow <= 0
-    ? project.technologies
-    : project.technologies.slice(0, MAX_VISIBLE_TECH);
+  const [titleMain, titleEyebrow] = project.title.includes('|')
+    ? project.title.split('|').map((s) => s.trim())
+    : [project.title, undefined];
+
+  const primaryUrl = project.liveUrl ?? project.storeUrl ?? project.repoUrl;
+  const primaryLabel = project.liveUrl
+    ? 'View Project'
+    : project.storeUrl
+      ? 'View in Store'
+      : 'View Code';
+
+  const secondaryLinks: { label: string; url: string }[] = [];
+  if (project.liveUrl && project.storeUrl) secondaryLinks.push({ label: 'Store', url: project.storeUrl });
+  if (primaryUrl !== project.repoUrl) secondaryLinks.push({ label: 'Code', url: project.repoUrl });
 
   return (
-    <GlassCard className="fade-in" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+    <GlassCard className="fade-in project-card-inner" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      {titleEyebrow && <span className="project-eyebrow">{titleEyebrow}</span>}
+      <h3 className="project-title">{titleMain}</h3>
+
       <div className="project-glyph"><ProjectGlyph id={project.id} /></div>
-      <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{project.title}</h3>
-      <p style={{ color: 'var(--ink-muted)', marginBottom: '1rem', flexGrow: 1, lineHeight: 1.6 }}>
-        {project.description}
-      </p>
-      <div style={{ marginBottom: '1rem' }}>
-        {visibleTech.map((tech) => (
-          <span key={tech} className="tech-badge">{tech}</span>
-        ))}
-        {overflow > 0 && !showAll && (
-          <button
-            type="button"
-            className="tech-badge tech-more"
-            onClick={() => setShowAll(true)}
-          >
-            +{overflow} more
-          </button>
-        )}
+
+      <p className="project-description">{project.description}</p>
+
+      <div className="project-divider" />
+
+      <div className="project-tech-line">
+        {project.technologies.slice(0, 5).join(' · ')}
+        {project.technologies.length > 5 ? ` +${project.technologies.length - 5}` : ''}
       </div>
-      <div className="card-actions">
-        {project.liveUrl && (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass-button compact"
-          >
-            Live →
-          </a>
-        )}
-        {project.storeUrl && (
-          <a
-            href={project.storeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass-button secondary compact"
-          >
-            Store
-          </a>
-        )}
-        <a
-          href={project.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="glass-button secondary compact"
-        >
-          Repo →
-        </a>
-      </div>
+
+      {secondaryLinks.length > 0 && (
+        <div className="project-secondary-links">
+          {secondaryLinks.map((link) => (
+            <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer">
+              {link.label} ↗
+            </a>
+          ))}
+        </div>
+      )}
+
+      <a
+        href={primaryUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn-pill project-cta"
+      >
+        {primaryLabel} →
+      </a>
     </GlassCard>
   );
 }
