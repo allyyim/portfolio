@@ -182,6 +182,19 @@
   color: var(--ink-muted);
 }
 
+.project-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(239, 111, 81, 0.14), rgba(86, 201, 183, 0.16));
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
 .tech-badge {
   display: inline-block;
   background: rgba(255, 255, 255, 0.86);
