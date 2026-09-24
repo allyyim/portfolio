@@ -99,13 +99,11 @@ export function About() {
         </div>
 
         <GlassCard>
-          <span className="eyebrow">Currently exploring</span>
+          <span className="eyebrow">Currently</span>
           <ul style={{ color: 'var(--ink-muted)', marginTop: '0.9rem', paddingLeft: '1.25rem', lineHeight: 1.8, fontSize: '0.95rem' }}>
-            <li>Scalable distributed systems and event-driven architectures</li>
-            <li>Cloud infrastructure optimization and cost efficiency</li>
-            <li>Full-stack development from backend APIs to polished frontends</li>
-            <li>Machine learning applications and data-driven optimization</li>
-            <li>Developer tools and productivity workflows</li>
+            <li>Building at Microsoft</li>
+            <li>Thinking about distributed systems</li>
+            <li>Drinking Matcha</li>
           </ul>
         </GlassCard>
       </section>
