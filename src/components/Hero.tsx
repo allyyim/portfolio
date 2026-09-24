@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="hero-landing">
       <div className="hero-topline">
-        <span className="hero-kicker">Portfolio — 2025</span>
+        <span className="hero-kicker">Portfolio</span>
         <span className="hero-kicker">Scroll ↓</span>
       </div>
 

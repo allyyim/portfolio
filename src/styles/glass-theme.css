@@ -1,7 +1,7 @@
 .app-shell {
   width: min(1080px, 100%);
   margin: 0 auto;
-  padding: 1.5rem clamp(1rem, 3vw, 1.75rem) 3rem;
+  padding: 1.5rem clamp(1.25rem, 4vw, 1.75rem) 3rem;
   position: relative;
 }
 
@@ -288,11 +288,14 @@
 .nav-toggle {
   display: none;
   background: transparent;
-  padding: 0.5rem;
-  border-radius: 999px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(16, 40, 56, 0.25);
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
   z-index: 101;
+  flex-shrink: 0;
 }
 
 .nav-toggle-icon {
@@ -349,7 +352,6 @@
   justify-content: center;
   min-height: calc(100svh - 6rem);
   padding: 2rem 0 3rem;
-  overflow: hidden;
 }
 
 .hero-topline {
@@ -424,26 +426,27 @@
 }
 
 .btn-pill-solid {
-  background: linear-gradient(110deg, var(--accent), var(--accent-2), var(--accent-3));
-  color: var(--pill-ink);
-  box-shadow: 0 10px 22px rgba(239, 111, 81, 0.28);
+  background: var(--ink);
+  color: #fdf3f0;
+  box-shadow: 0 8px 18px rgba(16, 40, 56, 0.22);
 }
 
 .btn-pill-solid:hover {
   transform: translateY(-2px);
-  color: var(--pill-ink);
-  box-shadow: 0 14px 26px rgba(239, 111, 81, 0.34);
+  color: #fdf3f0;
+  box-shadow: 0 12px 22px rgba(16, 40, 56, 0.28);
+  background: #1c3b4d;
 }
 
 .btn-pill-outline {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.35);
   color: var(--ink) !important;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(16, 40, 56, 0.35);
 }
 
 .btn-pill-outline:hover {
-  background: #ffffff;
-  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.7);
+  border-color: var(--ink);
   transform: translateY(-2px);
 }
 
