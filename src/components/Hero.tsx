@@ -14,14 +14,14 @@ export function Hero() {
         <p className="hero-role">{bioData.title}</p>
         <p className="hero-lead">{bioData.bio}</p>
         <div className="hero-actions">
-          <Link to="/projects" className="btn-pill btn-pill-solid">View Projects →</Link>
+          <Link to="/projects" className="btn-pill btn-pill-solid">Explore my work →</Link>
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-pill btn-pill-outline"
           >
-            Resume ↓
+            View Resume ↓
           </a>
         </div>
       </div>
