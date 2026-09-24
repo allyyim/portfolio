@@ -2,7 +2,7 @@ export const bioData = {
   name: 'Alison Yim',
   title: 'Software Engineer @ Microsoft',
   subtitle: 'Systems, infrastructure, and full-stack development',
-  bio: 'Software engineer at Microsoft. I build distributed systems and cloud infrastructure, and I like turning ambiguous problems into things people can actually use.',
+  bio: 'Software engineer at Microsoft building distributed systems and cloud infrastructure. I like solving messy problems, building things from scratch, and making overly complicated systems feel a little less complicated.',
   education: {
     school: 'Lehigh University',
     degree: 'B.S. Computer Science & Business (Honors)',
