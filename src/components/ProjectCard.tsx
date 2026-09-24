@@ -96,8 +96,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="project-divider" />
 
       <div className="project-tech-line">
-        {project.technologies.slice(0, 5).join(' · ')}
-        {project.technologies.length > 5 ? ` +${project.technologies.length - 5}` : ''}
+        {project.technologies.join(' · ')}
       </div>
 
       {secondaryLinks.length > 0 && (
