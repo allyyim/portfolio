@@ -13,7 +13,7 @@ export function Navbar() {
 
   return (
     <nav className={`nav-shell ${isOpen ? 'open' : ''}`}>
-      <Link to="/" className="nav-brand" onClick={close}>Alison Yim</Link>
+      <Link to="/" className="brand-mark" onClick={close}>alison yim</Link>
       <button
         className="nav-toggle"
         onClick={() => setIsOpen(!isOpen)}
@@ -28,7 +28,9 @@ export function Navbar() {
       </button>
       <div className={`nav-links ${isOpen ? 'open' : 'collapsed'}`}>
         <NavLink to="/" end className="nav-link" onClick={close}>Home</NavLink>
+        <span className="nav-sep">/</span>
         <NavLink to="/projects" className="nav-link" onClick={close}>Projects</NavLink>
+        <span className="nav-sep">/</span>
         <NavLink to="/about" className="nav-link" onClick={close}>About</NavLink>
         <a
           href="/resume.pdf"

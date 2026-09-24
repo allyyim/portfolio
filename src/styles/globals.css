@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@400;500;700&display=swap");
 
 :root {
   --ink: #102838;
@@ -29,10 +29,11 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 10% 20%, rgba(157, 221, 255, 0.34), transparent 40%),
-    radial-gradient(circle at 80% 80%, rgba(255, 193, 133, 0.22), transparent 44%),
-    radial-gradient(circle at 60% 10%, rgba(255, 202, 216, 0.28), transparent 42%),
-    linear-gradient(180deg, #e8f6fd 0%, #fff8ee 100%);
+    radial-gradient(ellipse 70% 55% at 18% 12%, rgba(255, 202, 216, 0.55), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 8%, rgba(255, 193, 133, 0.4), transparent 60%),
+    radial-gradient(ellipse 65% 55% at 90% 90%, rgba(86, 201, 183, 0.28), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 5% 95%, rgba(157, 221, 255, 0.3), transparent 60%),
+    linear-gradient(180deg, #fdf3f2 0%, #fbf7ee 55%, #f7f9f6 100%);
   background-attachment: fixed;
 }
 
