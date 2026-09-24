@@ -384,7 +384,7 @@
   top: 0;
   z-index: 100;
   margin: 0 0 0.5rem;
-  padding: 1rem 0;
+  padding: 1rem clamp(1.25rem, 4vw, 1.75rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
