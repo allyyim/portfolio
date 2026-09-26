@@ -14,6 +14,7 @@ export const bioData = {
     databases: ['CosmosDB', 'MySQL', 'PostgreSQL', 'MongoDB', 'Supabase'],
     tools: ['Docker', 'Git', 'GitHub Actions', 'Azure DevOps', 'CI/CD', 'Linux', 'TensorFlow', 'Pandas', 'NumPy'],
   },
+  topSkills: ['C#', 'TypeScript', 'Python', 'React', 'Azure', 'ASP.NET Core', 'CosmosDB', 'Docker'],
   experience: [
     {
       title: 'Software Engineer',
@@ -58,7 +59,7 @@ export const bioData = {
   ],
   currentlyExploring: [
     'Building at Microsoft',
-    'Prototyping a startup idea on nights and weekends',
+    'Debugging life like it has a business case and a stack trace',
     'Thinking in distributed systems',
     'Perpetually low on matcha',
     'Reading about founders who shipped before they were ready',
