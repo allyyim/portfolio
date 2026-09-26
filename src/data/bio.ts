@@ -82,6 +82,11 @@ export const bioData = {
       ],
     },
   ],
+  currentlyExploring: [
+    'Building at Microsoft',
+    'Thinking about distributed systems',
+    'Drinking Matcha',
+  ],
   contact: {
     github: 'https://github.com/allyyim',
     linkedin: 'https://www.linkedin.com/in/alison-yim/',

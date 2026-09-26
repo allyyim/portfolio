@@ -1,4 +1,5 @@
 import { GlassCard } from '../components/GlassCard';
+import { TerminalCurrently } from '../components/TerminalCurrently';
 import { bioData } from '../data/bio';
 import { Link } from 'react-router-dom';
 
@@ -100,11 +101,9 @@ export function About() {
 
         <GlassCard>
           <span className="eyebrow">Currently</span>
-          <ul style={{ color: 'var(--ink-muted)', marginTop: '0.9rem', paddingLeft: '1.25rem', lineHeight: 1.8, fontSize: '0.95rem' }}>
-            <li>Building at Microsoft</li>
-            <li>Thinking about distributed systems</li>
-            <li>Drinking Matcha</li>
-          </ul>
+          <div style={{ marginTop: '0.9rem' }}>
+            <TerminalCurrently lines={bioData.currentlyExploring} />
+          </div>
         </GlassCard>
       </section>
     </>

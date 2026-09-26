@@ -347,6 +347,163 @@
   border-color: var(--accent);
 }
 
+.terminal-window {
+  background: #0f0f0f;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: "SFMono-Regular", "Consolas", "Menlo", monospace;
+}
+
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #1b1b1b;
+  color: #d7d7d7;
+}
+
+.terminal-titlebar-icon {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  font-weight: 700;
+}
+
+.terminal-titlebar-title {
+  flex: 1;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #cfcfcf;
+}
+
+.terminal-titlebar-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #9a9a9a;
+  font-size: 0.7rem;
+}
+
+.terminal-ctrl-close:hover {
+  color: #ff5f56;
+}
+
+.terminal-menubar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  padding: 0.4rem 0.9rem;
+  background: #171717;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.terminal-menu-item {
+  font-size: 0.75rem;
+  color: #b6b6b6;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.terminal-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.5rem 0.9rem;
+  background: #171717;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.terminal-toolbar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  color: #c7c7c7;
+  font-family: "Space Grotesk", sans-serif;
+  white-space: nowrap;
+}
+
+.terminal-toolbar-icon {
+  font-size: 0.7rem;
+  color: #8a8a8a;
+}
+
+.terminal-caret {
+  font-size: 0.6rem;
+  color: #7a7a7a;
+}
+
+.terminal-toolbar-btn-disabled {
+  color: #5a5a5a;
+}
+
+.terminal-toolbar-btn-disabled .terminal-toolbar-icon {
+  color: #4a4a4a;
+}
+
+.terminal-toolbar-spacer {
+  flex: 1;
+}
+
+.terminal-body {
+  padding: 1.25rem 1.1rem 1.5rem;
+  min-height: 5.5rem;
+}
+
+.terminal-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.terminal-user {
+  color: #37e08a;
+}
+
+.terminal-colon {
+  color: #e8e8e8;
+}
+
+.terminal-path {
+  color: #5aa9e6;
+}
+
+.terminal-dollar {
+  color: #e8e8e8;
+  margin-right: 0.55rem;
+}
+
+.terminal-line-text {
+  color: #e8e8e8;
+  font-weight: 400;
+  animation: terminal-fade-in 220ms ease;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 0.55rem;
+  height: 1.1rem;
+  margin-left: 0.4rem;
+  background: #e8e8e8;
+  animation: terminal-blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes terminal-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+@keyframes terminal-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .tech-badge {
   display: inline-block;
   background: rgba(255, 255, 255, 0.86);
@@ -706,6 +863,17 @@
   }
 
   .hero-topline .hero-kicker:last-child { display: none; }
+
+  /* .nav-shell has backdrop-filter, which creates a new containing block for
+     its fixed-position descendants. Without this rule, .nav-links.open's
+     `position: fixed; inset: 0` would size itself to .nav-shell's (small)
+     box instead of the viewport, making the open mobile menu look cut off. */
+  .nav-shell.open {
+    position: fixed;
+    inset: 0;
+    height: 100svh;
+    z-index: 200;
+  }
 
   .nav-links.open {
     position: fixed;
