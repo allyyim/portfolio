@@ -21,13 +21,7 @@ export const bioData = {
       period: 'July 2024 - Present',
       location: 'Redmond, WA',
       chapter: 'Now',
-      story: 'Azure\'s control-plane was bottlenecked by manual deployments and inconsistent operational patterns across regions. I rebuilt the pipeline in C# with ARM-based automation, cutting deployment overhead by ~80%, and migrated 50% of production operations to event-driven REST APIs. On top of that I added CosmosDB data models, structured telemetry, and IAM/RBAC-aware request tracing to make on-call and audits straightforward.',
-      highlights: [
-        'Engineer C# Azure control-plane infrastructure, reducing deployment overhead by ~80% via automated ARM-based workflows',
-        'Develop distributed, concurrent backend services and scalable CosmosDB data models with production observability',
-        'Migrate 50% of production service operations to event-driven RESTful APIs with comprehensive testing',
-        'Extend backend validation pipelines with structured telemetry and request tracing for IAM/RBAC auditing',
-      ],
+      story: 'I rebuilt Azure\'s control-plane deployment pipeline in C#, cutting overhead by ~80% and moving half of production operations to event-driven APIs. I care about building systems other engineers can trust, and audit, without a second thought.',
     },
     {
       title: 'Software Engineering Intern',
@@ -35,12 +29,7 @@ export const bioData = {
       period: 'May - August 2023',
       location: 'Redmond, WA',
       chapter: 'Building for other engineers',
-      story: 'Partner teams needed to react to CRUD events in Azure Monitor, but the only path was fragile custom integrations and manual ops. I designed a self-service backend platform that let them subscribe to event-driven notifications, backed by a fault-tolerant asynchronous pipeline that eliminated 99.7% of manual work. I also strengthened regional onboarding infrastructure, improving deployment confidence by 20%.',
-      highlights: [
-        'Designed self-service backend platform enabling partner teams to subscribe to event-driven CRUD notifications',
-        'Built fault-tolerant event-driven pipeline processing asynchronous workloads, eliminating 99.7% of manual operations',
-        'Enhanced Azure Monitor regional onboarding infrastructure, improving deployment confidence by 20%',
-      ],
+      story: 'I built a self-service platform so partner teams could subscribe to event-driven Azure Monitor notifications instead of hand-rolling fragile integrations, cutting manual ops by 99.7%. It\'s the kind of invisible infrastructure that makes everyone else\'s job easier.',
     },
     {
       title: 'Undergraduate Researcher',
@@ -48,12 +37,7 @@ export const bioData = {
       period: 'August 2023 - May 2024',
       location: 'Bethlehem, PA',
       chapter: 'Data and research',
-      story: 'The lab had rich but messy user-study data: 833 raw data points and open-ended responses from 110 users, with no repeatable way to turn any of it into product decisions. I built a Python + pandas pipeline that produced 7 MATLAB visualizations, used text analysis to cluster free-form responses into themes, and synthesized 200+ sources and 24 user tests into an evidence-based product strategy.',
-      highlights: [
-        'Built Python (pandas) pipeline analyzing 833 data points into 7 MATLAB visualizations',
-        'Classified open-ended responses from 110 users into themes via text analysis',
-        'Synthesized 200+ research sources and 24 user-testing insights into evidence-based product strategy',
-      ],
+      story: 'I turned 833 messy data points and open-ended responses from 110 users into a Python pipeline with clear visualizations and clustered themes. I love finding the signal in chaos and shipping it as something decision-makers can actually use.',
     },
     {
       title: 'Explore Intern (PM & SWE)',
@@ -61,12 +45,7 @@ export const bioData = {
       period: 'May - August 2022',
       location: 'Redmond, WA',
       chapter: 'First systems work',
-      story: 'Azure Server Performance testing was slow; engineers were hand-picking VM configurations and combing through logs. In a dual PM + SWE role, I designed a VM-placement algorithm that maximized valid test-config utilization and automated deployment plus validation with PowerShell and Kusto, cutting log analysis time by 99.84%. I also led a 3-intern team as PM and presented findings to the Azure Server Performance team.',
-      highlights: [
-        'Designed VM-placement algorithm optimizing valid test configurations for maximum resource utilization',
-        'Automated VM deployment and validation via PowerShell and Kusto, cutting log analysis time by 99.84%',
-        'Led 3-intern team as PM with Agile deliverables; presented findings to Azure Server Performance team',
-      ],
+      story: 'In a dual PM + SWE role, I designed a VM-placement algorithm and automated validation pipeline that slashed Azure Server Performance log analysis time by 99.84%. It was my first taste of owning a problem end-to-end, and leading a team to ship it.',
     },
     {
       title: 'FinTech Focus Fellow',
@@ -74,18 +53,16 @@ export const bioData = {
       period: 'July 2020',
       location: 'New York, NY',
       chapter: 'Where it started',
-      story: 'FinTech Focus was an immersive four-week fellowship hosted by Bank of America, Goldman Sachs, JPMorgan Chase, Morgan Stanley, and Wells Fargo, building full-stack MVPs in Flask, Python, MongoDB, HTML, and CSS. I co-created ReadHot, a Flask app that generates custom Spotify playlists matching the themes of a book using the Google Books, Open Library, IBM Watson, and Spotify APIs.',
-      highlights: [
-        'Built full-stack Flask web applications with MongoDB, Python, HTML, and CSS',
-        'Iterated from prototype → MVP → final web app presentations',
-        'Co-created ReadHot: a Flask app integrating Google Books, Open Library, IBM Watson, and Spotify APIs to generate book-themed playlists',
-      ],
+      story: 'In a four-week fellowship with five major banks, I co-created ReadHot, a Flask app that generates Spotify playlists matching the themes of a book. This is where I first fell for turning weird ideas into working software.',
     },
   ],
   currentlyExploring: [
     'Building at Microsoft',
-    'Thinking about distributed systems',
-    'Drinking Matcha',
+    'Prototyping a startup idea on nights and weekends',
+    'Thinking in distributed systems',
+    'Perpetually low on matcha',
+    'Reading about founders who shipped before they were ready',
+    'Always down to talk entrepreneurship',
   ],
   contact: {
     github: 'https://github.com/allyyim',
